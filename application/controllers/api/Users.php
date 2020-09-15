@@ -73,14 +73,7 @@ class Users extends REST_Controller {
     }
 
     private function curlku($page){
-        // $now = new DateTime();
-        $now = new DateTime(null, new DateTimeZone('UTC'));
-        // echo $now->format('Y-m-d H:i:s');    // MySQL datetime format
-        // echo "<br>";
-        // echo $now->getTimestamp();  
-        // $timestam = $now->getTimestamp();
 
-        // die();
         // persiapkan curl
         $ch = curl_init(); 
 
