@@ -6,7 +6,7 @@ API SINGLE USER
 
 Dapat langsung GET Tanpa parameter id
 Tanpa Parameter id
-Contoh : http://localhost/ptrukun/api/User/2
+Contoh : http://localhost/ptrukun/api/Users/2
 
 Dengan Parameter id
 Contoh : http://localhost/ptrukun/api/Users/?id=2
