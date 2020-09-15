@@ -87,7 +87,7 @@
 
     <b>API SINGLE USER</b>
     Dapat langsung GET Tanpa parameter id 
-        Tanpa Parameter id Contoh : <?=base_url()?>api/User/2
+        Tanpa Parameter id Contoh : <?=base_url()?>api/Users/2
         Dengan Parameter id Contoh : <?=base_url()?>api/Users/?id=2
 
     <b>API LOGIN</b>
