@@ -26,8 +26,8 @@ class Login extends REST_Controller {
         $email      = $this->input->post('email');
         $password   = $this->input->post('password');
         
-        $this->form_validation->set_rules('email', 'email', 'required');
-        $this->form_validation->set_rules('password', 'password', 'required');
+        $this->form_validation->set_rules('email', 'email', 'required|trim');
+        $this->form_validation->set_rules('password', 'password', 'required|trim');
 
         if ($this->form_validation->run() == FALSE){
             $this->set_response([
