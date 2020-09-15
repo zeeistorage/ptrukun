@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Welcome to CodeIgniter</title>
+    <title>REST SERVER</title>
 
     <style type="text/css">
 
@@ -71,27 +71,39 @@
 <body>
 
 <div id="container">
-    <h1>Welcome to CodeIgniter!</h1>
+    <h1>TEST PT RUKUN KREASI INDONESIA</h1>
 
     <div id="body">
 
-        <h2><a href="<?php echo site_url('rest-server'); ?>">REST Server Tests</a></h2>
+        <h2><a href="<?php echo site_url(); ?>">Membuat APi</a></h2>
 
         <?php if (file_exists(FCPATH.'documentation/index.html')) : ?>
         <h2><a href="<?php echo base_url('documentation/index.html'); ?>" target="_blank">REST Server Documentation</a></h2>
         <?php endif ?>
+        <code>
+<pre>
+    <b>API LIST USER</b>
+    <?=base_url()?>api/Users?page=2
 
-        <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+    <b>API SINGLE USER</b>
+    Dapat langsung GET Tanpa parameter id 
+        Tanpa Parameter id Contoh : <?=base_url()?>api/User/2
+        Dengan Parameter id Contoh : <?=base_url()?>api/Users/?id=2
 
-        <p>If you would like to edit this page you'll find it located at:</p>
-        <code>application/views/welcome_message.php</code>
+    <b>API LOGIN</b>
+    localhost/ptrukun/api/Login
 
-        <p>The corresponding controller for this page is found at:</p>
-        <code>application/controllers/Welcome.php</code>
+    <b>Dokumentasi POSTMAN</b> 
+    https://documenter.getpostman.com/view/10496604/TVK8Zz7b
 
-        <?php if (file_exists(FCPATH.'user_guide/index.html')) : ?>
-        <p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="<?php echo base_url('user_guide/index.html'); ?>" target="_blank">User Guide</a>.</p>
-        <?php endif ?>
+</pre>
+
+        </code>
+
+        <p>Online server found at:</p>
+        <code>http://app.zeeid.net/ptrukun/</code>
+
+        
     </div>
 
     <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>'.CI_VERSION.'</strong>' : '' ?></p>
