@@ -18,3 +18,6 @@ localhost/ptrukun/api/Login
 
 Dokumentasi POSTMAN
 https://documenter.getpostman.com/view/10496604/TVK8Zz7b
+
+
+Online server found at: http://app.zeeid.net/ptrukun/
