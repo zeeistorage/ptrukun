@@ -37,7 +37,18 @@ class Login extends REST_Controller {
         }else{
             // echo "OKE";
             $data = $this->login($email,$password);
-            $this->set_response(json_decode($data), REST_Controller::HTTP_OK);
+            if($data){
+                $this->set_response([
+                    'status' => True,
+                    'data' => json_decode($data),
+                    'message' => 'Login Berhasil'
+                ], REST_Controller::HTTP_OK);
+            }else{
+                $this->set_response([
+                    'status' => FALSE,
+                    'message' => 'Server Error'
+                ], REST_Controller::HTTP_BAD_REQUEST);
+            }
         }
     }
 
