@@ -1,7 +1,9 @@
 API LIST USER
+
 localhost/ptrukun/api/Users?page=2
 
 API SINGLE USER
+
 Dapat langsung GET Tanpa parameter id
 Tanpa Parameter id
 Contoh : http://localhost/ptrukun/api/User/2
@@ -12,3 +14,7 @@ Contoh : http://localhost/ptrukun/api/Users/?id=2
 API LOGIN
 
 localhost/ptrukun/api/Login
+
+
+Dokumentasi POSTMAN
+https://documenter.getpostman.com/view/10496604/TVK8Zz7b
