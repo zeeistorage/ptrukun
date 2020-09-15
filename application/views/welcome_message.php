@@ -82,7 +82,7 @@
         <?php endif ?>
         <code>
 <pre>
-    <b>API LIST USER</b>
+    <b>API LIST USER </b>
     <?=base_url()?>api/Users?page=2
 
     <b>API SINGLE USER</b>
